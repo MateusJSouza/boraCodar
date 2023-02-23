@@ -32,12 +32,10 @@ selectCity.addEventListener('change', filterCardsByCity);
 
 function filterCardsByCity() {
   const selectedCity = selectCity.value;
-  const cityCard = document.querySelector(`#${selectedCity}`);
   const elements = document.querySelectorAll('.card-city');
-  // const ifItsMoreThanOne = document.querySelectorAll('isMoreThanOne');
 
   for (const element of elements) {
-    if (element === cityCard) {
+    if (element.classList.contains(selectedCity)) {
       element.style.display = 'block';
     } else {
       element.style.display = 'none';

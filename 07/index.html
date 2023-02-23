@@ -50,10 +50,6 @@
           </select>
           <i class="ph-caret-down-light"></i>
         </div>
-
-        <button type="submit" class="primary">
-          buscar agora
-        </button>
       </form>
     </div>
   </header>
@@ -64,13 +60,13 @@
         <h2>Blocos recomendados</h2>
 
         <div class="view">
-          <button class="btn primary" onclick="">Mapa</button>
-          <button class="btn secondary">Lista</button>
+          <button class="btn primary" id="grade"><i class="ph-squares-four-light"></i></button>
+          <button class="btn secondary" id="lista"><i class="ph-list-light"></i></button>
         </div>
       </section>
 
       <section class="cards">
-        <div class="card card-city isMoreThanOne">
+        <div class="card card-city sao-paulo">
           <img src="./assets/01.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>O python do vovô não sobe mais</h3>
@@ -83,7 +79,7 @@
           </div>
         </div>
 
-        <div class="card card-city" id="florianopolis">
+        <div class="card card-city florianopolis">
           <img src="./assets/02.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Todo mundo null</h3>
@@ -96,7 +92,7 @@
           </div>
         </div>
 
-        <div class="card card-city" id="curitiba">
+        <div class="card card-city curitiba">
           <img src="./assets/03.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Hoje dou exception</h3>
@@ -109,7 +105,7 @@
           </div>
         </div>
 
-        <div class="card card-city" id="salvador">
+        <div class="card card-city salvador">
           <img src="./assets/04.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Manda Node</h3>
@@ -122,7 +118,7 @@
           </div>
         </div>
 
-        <div class="card card-city isMoreThanOne">
+        <div class="card card-city sao-paulo">
           <img src="./assets/05.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Só no back-end</h3>
@@ -135,7 +131,7 @@
           </div>
         </div>
 
-        <div class="card card-city isMoreThanOne">
+        <div class="card card-city sao-paulo">
           <img src="./assets/06.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Esse anel não é de Ruby</h3>
@@ -148,7 +144,7 @@
           </div>
         </div>
 
-        <div class="card card-city" id="rio-de-janeiro">
+        <div class="card card-city rio-de-janeiro">
           <img src="./assets/07.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>Pimenta no C# dos outros é refresco</h3>
@@ -161,7 +157,7 @@
           </div>
         </div>
 
-        <div class="card card-city" id="porto-alegre">
+        <div class="card card-city porto-alegre">
           <img src="./assets/08.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
             <h3>EnCACHE aqui</h3>
