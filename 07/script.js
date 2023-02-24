@@ -41,5 +41,29 @@ function filterCardsByCity() {
       element.style.display = 'none';
     }
   }
+
+  if (selectedCity == 'city') {
+    for (const element of elements) {
+      element.style.display = 'block';
+    }
+  }
 }
 
+const btnGrid = document.querySelector('.primary');
+const btnList = document.querySelector('.secondary');
+const cardsContainer = document.querySelector('.cards');
+const listContainer = document.querySelector('.lists');
+
+btnGrid.addEventListener('click', () => {
+  btnGrid.classList.add('active');
+  btnList.classList.remove('active');
+  cardsContainer.classList.add('grid-view');
+  listContainer.classList.add('list-view');
+})
+
+btnList.addEventListener('click', () => {
+  btnList.classList.add('active');
+  btnGrid.classList.remove('active');
+  listContainer.classList.add('list-view');
+  cardsContainer.classList.remove('grid-view');
+})

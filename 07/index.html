@@ -29,6 +29,7 @@
             id="name"
             name="name"
             placeholder="Pesquise por nome"
+            onchange={handleChange}
           />
         </div>
 
@@ -60,12 +61,12 @@
         <h2>Blocos recomendados</h2>
 
         <div class="view">
-          <button class="btn primary" id="grade"><i class="ph-squares-four-light"></i></button>
+          <button class="btn primary active" id="grade"><i class="ph-squares-four-light"></i></button>
           <button class="btn secondary" id="lista"><i class="ph-list-light"></i></button>
         </div>
       </section>
 
-      <section class="cards">
+      <section class="cards grid-view">
         <div class="card card-city sao-paulo">
           <img src="./assets/01.jpg" alt="Homem com costeleta e cartola curtindo o carnaval">
           <div class="content">
@@ -184,7 +185,20 @@
         </div>
       </section>
     </div>
+
+    <section class="lists list-view" style="display: none">
+      <ul>
+        <li>Curitiba</li>
+        <li>São Paulo</li>
+        <li>Florianópolis</li>
+        <li>Salvador</li>
+      </ul>
+    </section>
+
+    <div id="block-not-found">
+
+    </div>
   </main>
+  <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
